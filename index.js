@@ -4,7 +4,7 @@ let rawdata = fs.readFileSync('config.json');
 let data = JSON.parse(rawdata);
 var lasttime = -1;
 var moving = 0;
-var connected = 0;
+var connected = 2;
 var actions = [ 'forward', 'back', 'left', 'right']
 var lastaction;
 var pi = 3.14159;
@@ -54,6 +54,6 @@ bot.on('time', function() {
 });
 
 bot.on('spawn',function() {
-    connected=6;
+    connected=2;
 });
 
