@@ -54,6 +54,6 @@ bot.on('time', function() {
 });
 
 bot.on('spawn',function() {
-    connected=1;
+    connected=6;
 });
 
